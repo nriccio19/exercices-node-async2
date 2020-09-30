@@ -1,10 +1,10 @@
 import axios from 'axios'
 import fs from 'fs/promises'
 
-let url = await axios.get(process.argv[3])
+let htmlContent = (await axios.get(process.argv[3])).data
 
-await fs.writeFile(process.argv[2], url.data)
+await fs.writeFile(process.argv[2], htmlContent)
 
-console.log(`L'adresse ${url} à bien était copié dans un nouveau fichier.`)
-
-console.log(url)
+console.log(
+    `L'adresse ${process.argv[3]} à bien était copié dans un nouveau fichier.`
+)

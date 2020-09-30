@@ -57,3 +57,30 @@ import axios from 'axios'
             console.log(err)
         })
 })()
+
+// import axios from 'axios'
+// import chalk from 'chalk'
+
+// /* let response1 = await axios.get('https://www.facebook.com')
+// let response2 = await axios.get('https://www.amazon.com')
+// let response3 = await axios.get('https://www.apple.com')
+// let response4 = await axios.get('https://www.google.com') */
+
+// let response = async (url) => {
+//     await axios.get(url)
+//     return new Promise((resolve, reject) => {
+//         console.log(chalk.green(`Promise résolue pour ${url}`))
+//         resolve(chalk.red(`${url} chargée en premier`))
+//     })
+// }
+
+// let data = await Promise.race([
+//     response('https://www.amazon.com'),
+//     response('https://www.facebook.com'),
+//     response('https://www.apple.com'),
+//     response('https://www.google.com'),
+//     response('https://soundswitch.com/#buy'),
+// ]).catch((err) => {
+//     console.error(err)
+// })
+// console.log(data)
